@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+.calculator{
+    width: 42%;
+    height: 70vh;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #454444;
+    background: whitesmoke;
+    box-shadow: 0px 3px 16px rgba(113, 115,119 , 0.5)
+}
+.screen input{
+    width: 97%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                 inset -8px -8px 8px #ffffff;
+}
+.action{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.numbers button{
+    width: 120px;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid wheat;
+    outline: none;
+    background: cyan;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 4px;
+    box-sizing: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffffffff;
+}
+.action button{
+    width: 117px;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid wheat;
+    outline: none;
+    margin: 5px;
+    background:#cbced1;
+    border-radius: 4px;
+    box-sizing: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffffffff;
+}
+.numbers button.clear{
+    background-color: crimson;
+    cursor: pointer;
+}
+.numbers button.clear:active{
+    background-color: red;
+}
+.numbers button.equal{
+    background-color: green;
+    cursor: pointer;
+}
+.numbers button.equal:active{
+    background-color: greenyellow;
+}
